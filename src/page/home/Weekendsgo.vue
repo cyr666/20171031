@@ -4,7 +4,9 @@
 			周末去哪儿
 		</div>
 		<div class="wg-class">
-			<img src="../../img/1.jpg" />
+			<div class="wg-img">
+				<img src="../../img/1.jpg" />
+			</div>
 			<div class="wg-words">
 				<p class="w-title">
 					北京温泉排行榜
@@ -15,7 +17,9 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<img src="../../img/2.jpg" />
+			<div class="wg-img">
+				<img src="../../img/2.jpg" />
+			</div>
 			<div class="wg-words">
 				<p class="w-title">
 					寻找北京的皇城范儿
@@ -26,7 +30,9 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<img src="../../img/3.jpg" />
+			<div class="wg-img">
+				<img src="../../img/3.jpg" />
+			</div>
 			<div class="wg-words">
 				<p class="w-title">
 					北京必游TOP10
@@ -37,7 +43,9 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<img src="../../img/4.jpg" />
+			<div class="wg-img">
+				<img src="../../img/4.jpg" />
+			</div>
 			<div class="wg-words">
 				<p class="w-title">
 					登高望远秋色佳
@@ -48,7 +56,9 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<img src="../../img/5.jpg" />
+			<div class="wg-img">
+				<img src="../../img/5.jpg" />
+			</div>
 			<div class="wg-words">
 				<p class="w-title">
 					秋高气爽去礼佛
@@ -83,8 +93,14 @@
 		background: white;
 		margin-top: .08rem;
 	}
-	.wg-class img{
+	.wg-img{
+		width: 100%;
 		height: 2.5rem;
+		overflow: hidden;
+	}
+	.wg-img img{
+		width: 100%;
+		height: 100%;
 	}
 	.wg-words{
 		padding: .1rem 0 .26rem;
