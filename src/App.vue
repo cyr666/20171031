@@ -6,9 +6,10 @@
 
 <script>
 export default {
-  name: 'app'
+ 
 }
 </script>
 
 <style>
+	@import "./reset.css";
 </style>
