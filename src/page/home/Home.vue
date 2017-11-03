@@ -1,6 +1,8 @@
 <template>
-	<app-header/>
-	<weekendsgo-content/>
+	<div>
+		<app-header/>
+		<weekendsgo-content/>
+	</div>
 </template>
 
 <script>
