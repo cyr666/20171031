@@ -4,7 +4,7 @@
 			周末去哪儿
 		</div>
 		<div class="wg-class">
-			<img src="./1.jpg" />
+			<img src="../../img/1.jpg" />
 			<div class="wg-words">
 				<p class="w-title">
 					北京温泉排行榜
@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<img src="./2.jpg" />
+			<img src="../../img/2.jpg" />
 			<div class="wg-words">
 				<p class="w-title">
 					寻找北京的皇城范儿
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<img src="./3.jpg" />
+			<img src="../../img/3.jpg" />
 			<div class="wg-words">
 				<p class="w-title">
 					北京必游TOP10
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<img src="./4.jpg" />
+			<img src="../../img/4.jpg" />
 			<div class="wg-words">
 				<p class="w-title">
 					登高望远秋色佳
@@ -48,7 +48,7 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<img src="./5.jpg" />
+			<img src="../../img/5.jpg" />
 			<div class="wg-words">
 				<p class="w-title">
 					秋高气爽去礼佛
