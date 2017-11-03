@@ -4,9 +4,7 @@
 			周末去哪儿
 		</div>
 		<div class="wg-class">
-			<div class="wg-img">
-				<img src="../../img/1.jpg" />
-			</div>
+			<img src="http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg" alt="北京温泉排行榜">
 			<div class="wg-words">
 				<p class="w-title">
 					北京温泉排行榜
@@ -17,9 +15,7 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<div class="wg-img">
-				<img src="../../img/2.jpg" />
-			</div>
+			<img src="http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg" alt="寻找北京的皇城范儿">
 			<div class="wg-words">
 				<p class="w-title">
 					寻找北京的皇城范儿
@@ -30,9 +26,7 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<div class="wg-img">
-				<img src="../../img/3.jpg" />
-			</div>
+			<img src="http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg" alt="北京必游TOP10">
 			<div class="wg-words">
 				<p class="w-title">
 					北京必游TOP10
@@ -43,9 +37,7 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<div class="wg-img">
-				<img src="../../img/4.jpg" />
-			</div>
+			<img src="http://img1.qunarzz.com/sight/source/1509/81/0412da9c4db66a.jpg_r_640x214_8e23871e.jpg" alt="登高望远秋色佳">
 			<div class="wg-words">
 				<p class="w-title">
 					登高望远秋色佳
@@ -56,9 +48,7 @@
 			</div>
 		</div>
 		<div class="wg-class">
-			<div class="wg-img">
-				<img src="../../img/5.jpg" />
-			</div>
+			<img src="http://img1.qunarzz.com/sight/source/1509/28/1bb74b851279e6.jpg_r_640x214_64ebf0ee.jpg" alt="秋高气爽去礼佛">
 			<div class="wg-words">
 				<p class="w-title">
 					秋高气爽去礼佛
@@ -93,14 +83,9 @@
 		background: white;
 		margin-top: .08rem;
 	}
-	.wg-img{
+	.wg-class img{
 		width: 100%;
-		height: 2.5rem;
-		overflow: hidden;
-	}
-	.wg-img img{
-		width: 100%;
-		height: 100%;
+		height:100%;
 	}
 	.wg-words{
 		padding: .1rem 0 .26rem;
