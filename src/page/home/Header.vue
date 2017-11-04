@@ -21,6 +21,7 @@
 
 <style>
 	.header {
+		overflow: hidden;
 		height: .88rem;
 		background: #00bcd4;
 	}
@@ -43,7 +44,7 @@
 		text-indent: .2rem;
 		color: #ccc;
 	}
-	.header-right {
+	.header-right {		
 		float: right;
 		width: 1.28rem;
 		line-height: .88rem;
