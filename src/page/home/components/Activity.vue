@@ -15,10 +15,10 @@
 		</ul>
 		<ul class="activity-con">
 			<li class="activity-item activity-item-right">
-				<img src="../img/index/activity-img01.png">
+				<img src="../../img/index/activity-img01.png">
 			</li>
 			<li class="activity-item activity-item-left">
-				<img src="../img/index/activity-img02.png">
+				<img src="../../img/index/activity-img02.png">
 			</li>
 		</ul>
 	</div>
