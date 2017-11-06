@@ -61,6 +61,7 @@
 
 <style scoped>
 	.HotRecommend-con{
+		clear: both;
 		width:100%;
 		background:#eee;
 	}

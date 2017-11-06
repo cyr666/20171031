@@ -3,6 +3,7 @@
 		<app-header/>
 		<swiper-content/>
 		<Category/>
+		<Activity/>
 		<hot-recommend/>
 		<weekendsgo-content/>
 	</div>
@@ -12,6 +13,7 @@
 	import HeaderComponent from "./Header";
 	import WeekendsgoComponent from "./Weekendsgo";
 	import SwiperComponent from "./Swiper";
+	import Activity from "./Activity";
 	import HotRecommend from "./Recommend";
 	import Category from "./Category";
 	export default {
@@ -20,7 +22,8 @@
 		"weekendsgo-content": WeekendsgoComponent,
 		"swiper-content":SwiperComponent,
 		"hot-recommend":HotRecommend,
-		"Category":Category
+		"Category":Category,
+		"Activity":Activity
 	}
 }
 </script>
