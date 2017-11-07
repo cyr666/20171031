@@ -1,6 +1,101 @@
 {
 	"ret":true,
 	"data":{
-		
+		"iconswiperInfo": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+			"keywords": "景点门票",
+			"link": "/"
+		},
+		{
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
+			"keywords": "动植物园",
+			"link": "/"
+		},
+		{
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/45/676b67d7078abc02.png",
+			"keywords": "故宫",
+			"link": "/"
+		},
+		{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+			"keywords": "一日游",
+			"link": "/onedaytour"
+		},
+		{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+			"keywords": "必游榜单",
+			"link": "/"
+		},
+		{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
+			"keywords": "秋色美",
+			"link": "/"
+		},
+		{
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
+			"keywords": "游乐场",
+			"link": "/"
+		},
+		{
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
+			"keywords": "泡温泉",
+			"link": "/"
+		}],
+		"iconswiperInfoSecond": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/29/c16cd064d85d8502.png",
+			"keywords": "城市观光",
+			"link": "/"
+		},
+		{
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/1c/a8a8d9023a814c02.png",
+			"keywords": "玻璃栈道",
+			"link": "/"
+		},
+		{
+			"id": 3,
+			"imgUrl": "https://img1.qunarzz.com/piao/fusion/1602/f2/71eb19f77e3f21f7.png",
+			"keywords": "名胜古迹",
+			"link": "/"
+		},
+		{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/cd/07f33cc087f18d02.png",
+			"keywords": "周边游",
+			"link": "/"
+		},
+		{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+			"keywords": "自然风光",
+			"link": "/"
+		},
+		{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/ea/8cb1dce519375d02.png",
+			"keywords": "古水北镇",
+			"link": "/"
+		},
+		{
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1707/34/9285073fde1eb702.png",
+			"keywords": "景点讲解",
+			"link": "/"
+		},
+		{
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/be/a70e61e1f57ee302.png",
+			"keywords": "全部",
+			"link": "/"
+		}]
 	}
 }
