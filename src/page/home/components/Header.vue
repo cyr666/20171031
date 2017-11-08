@@ -19,7 +19,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.header {
 		overflow: hidden;
 		height: .88rem;
