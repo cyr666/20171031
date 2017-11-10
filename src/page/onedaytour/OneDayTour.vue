@@ -1,7 +1,7 @@
 <template>
 	<div class="onedaytour">
 		<headerconent/>	
-		<onedaytourlist/>
+		<list/>
 		<ticket :ticketInfo="ticketInfo" :ticketInfoSecond="ticketInfoSecond"/>
 		<typefilter/>
 	</div>
@@ -9,7 +9,7 @@
 
 <script>
 	import OneDayHeader from "./OneDayHeader";
-	import OneDayTour_List from "./OneDayTour_List";
+	import list from "./list";
 	import Ticket from "./Ticket";
 	import Typefilter from "./Typefilter";
 	import axios from "axios";
@@ -25,9 +25,10 @@
 		
 		components:{
 			"headerconent":OneDayHeader,
-			"onedaytourlist":OneDayTour_List,
+//			"onedaytourlist":OneDayTour_List,
 			"ticket": Ticket,
-			"typefilter": Typefilter
+			"typefilter": Typefilter,
+			"list":list
 		},
 		
 		methods: {

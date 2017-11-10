@@ -106,6 +106,9 @@
 </script>
 
 <style scoped>
+	/*.ticketContainer{
+		margin-top:9rem;
+	}*/
 	.ticketCon {
 		margin-top: .8rem;
 	}
