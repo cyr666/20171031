@@ -186,6 +186,114 @@
 			"stuTicket2" : "北京园博园儿童/老人票",
 			"price22" : "9"
 		}
-	]
+	],
+	"bigitem": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/3e/72d2396d47131702.png",
+			"bigname": "运动健身",
+			"smallname": ["全部运动健身","游泳","健身","滑雪","体育馆","瑜伽","保龄球","舞蹈"]
+	
+		},{
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/73/0c8e23368dceac02.png",
+			"bigname": "文化古迹",
+			"smallname": []
+		},{
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/a5/9254bfcb77931f02.png",
+			"bigname": "农家度假",
+			"smallname": []
+		},{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/e6/f8a210e488ba7602.png",
+			"bigname": "演出",
+			"smallname": []
+		},{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/3e/d07407699d56c202.png",
+			"bigname": "游乐场",
+			"smallname": []
+		},{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/f8/799d67d22404c602.png",
+			"bigname": "自然风光",
+			"smallname": []
+		},{
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/70/a7a71fb69cc7d902.png",
+			"bigname": "公园",
+			"smallname": []
+		},{
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/de/8b3631887808e202.png",
+			"bigname": "展馆",
+			"smallname": []
+		},{
+			"id": 9,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/86/95cb8117ad91a402.png",
+			"bigname": "温泉",
+			"smallname": []
+		},{
+			"id": 10,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1509/1e/bee608077e1927.png",
+			"bigname": "户外拓展",
+			"smallname": []
+		},{
+			"id": 11,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/d5/2a3ec877befef902.png",
+			"bigname": "室内娱乐",
+			"smallname": []
+		},{
+			"id": 12,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/d5/59dbd6c5a28aac02.png",
+			"bigname": "城市观光",
+			"smallname": []
+		},{
+			"id": 13,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/15/8883a00c917e5202.png",
+			"bigname": "体验馆",
+			"smallname": []
+		},{
+			"id": 14,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/ce/e06a995a69d60702.png",
+			"bigname": "餐饮",
+			"smallname": []
+		},{
+			"id": 15,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/88/081697df39c9f802.png",
+			"bigname": "水上玩乐",
+			"smallname": []
+		},{
+			"id": 16,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/26/1eea67d9388e4b02.png",
+			"bigname": "手工",
+			"smallname": []
+		},{
+			"id": 17,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/16/165a69fea0cc0502.png",
+			"bigname": "植物园",
+			"smallname": []
+		},{
+			"id": 18,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/38/bb338d8258a1ed02.png",
+			"bigname": "出行必备",
+			"smallname": []
+		},{
+			"id": 19,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/2c/d4a2b394eecbeb02.png",
+			"bigname": "游船",
+			"smallname": []
+		},{
+			"id": 20,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/15/d94c0a3f16a48a02.png",
+			"bigname": "交通",
+			"smallname": []
+		},{
+			"id": 21,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/72/494d8f9690e0ea02.png",
+			"bigname": "海洋馆",
+			"smallname": []
+		}
+		]
 	}
 }

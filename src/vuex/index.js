@@ -1,33 +1,16 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
-import axios from "axios"
+
+import beijing_scenic from '../page/beijing_scenic/module.js'
 
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-	state: {
-		ticket:[]
-	},
-	actions: {
-		getTicket(context) {
-			axios.get('/static/scenic.json')
-				.then((response) => {
-					if (response.status === 200) {
-						const {data}  = response.data;
-						context.commit("changeTicket", data.ticket);
-						console.log(data.ticket);
-					}
-				})
-		}
-	},
-	mutations: {
-		changeTicket(state, data) {
-			state.ticket = data
-		}
-	},
-	getters: {
-
+	
+	modules: {
+//		home: home,
+		beijing_scenic: beijing_scenic
 	}
 		
 })

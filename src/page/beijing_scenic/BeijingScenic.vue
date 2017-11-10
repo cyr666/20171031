@@ -103,7 +103,6 @@
 
 <script>
 	export default {
-		props:["ticket"],
 		data(){
 			return {
 				page:1,
@@ -133,6 +132,11 @@
 				this.color2 = "#fff";
 				this.border2 = ".02rem solid #00afc7";
 				this.color3 = "#00afc7";
+			}
+		},
+		computed: {
+			ticket() {
+				return this.$store.state.beijing_scenic.ticket;
 			}
 		}
 	}
