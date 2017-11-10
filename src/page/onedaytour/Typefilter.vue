@@ -81,7 +81,10 @@
 
 <style>
 	.typefilter-outer {
-		position: relative;
+		display: none;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
 		background: rgba(0,0,0,.8);
 	}
 	.typefilter {

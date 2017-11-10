@@ -1,225 +1,105 @@
 <template>
-	<div class="ticketCon">
-		<ul class="ticket-img-container">
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem list-tagitemleft">无自费</span>
-						<span class="list-tagitem list-tagitemright">无购物</span>
+	<div class="ticketContainer">
+		<div class="ticketCon" v-show = "!show">
+			<ul class="ticket-img-container">
+				<li class="ticket-img-con" v-for="item in ticketInfo" :key="item.id">
+					<div class="list-img-con">
+						<img :src="item.imgUrl" class="ticket-img" :onerror="defaultImg" />
+						<span class="list-bookingflag" :class= "item.classname">{{item.bookingflag}}</span>
 					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
+					<div class="list-product">
+						<router-link :to="item.link" class="ticket-list">
+							<h4 class="list-productname">{{item.productname}}</h4>
+						</router-link>
+						<div class="list-taglist">
+							<span class="list-tagitemlight">{{item.setout}}</span>
+							<span class="list-tagitem list-tagitemleft">{{item.outofpocket}}</span>
+							<span class="list-tagitem list-tagitemright">{{item.shopping}}</span>
+						</div>
+						<div class="list-priceinfo">
+							<span class="list-qunarprice">¥<em class="list-price">{{item.price}}</em></span>
+							<span class="list-priceflag">起</span>
+						</div>
+						<div class="list-moreinfo">
+							<span class="list-text">{{item.sold}}</span>
+						</div>
 					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
+				</li>
+			</ul>
+		</div>
+		<div class="ticketCon ticketConSecond" v-show = "show">
+			<ul class="ticket-img-container">
+				<li class="ticket-img-con" v-for="item in ticketInfoSecond" :key="item.id">
+					<div class="list-img-con">
+						<img :src="item.imgUrl" class="ticket-img" :onerror="defaultImg" />
+						<span class="list-bookingflag" :class= "item.classname">{{item.bookingflag}}</span>
 					</div>
-				</div>
-			</li>
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem">无自费</span>
-						<span class="list-tagitem">无购物</span>
+					<div class="list-product">
+						<router-link :to="item.link" class="ticket-list">
+							<h4 class="list-productname">{{item.productname}}</h4>
+						</router-link>
+						<div class="list-taglist">
+							<span class="list-tagitemlight">{{item.setout}}</span>
+							<span class="list-tagitem list-tagitemleft">{{item.outofpocket}}</span>
+							<span class="list-tagitem list-tagitemright">{{item.shopping}}</span>
+						</div>
+						<div class="list-priceinfo">
+							<span class="list-qunarprice">¥<em class="list-price">{{item.price}}</em></span>
+							<span class="list-priceflag">起</span>
+						</div>
+						<div class="list-moreinfo">
+							<span class="list-text">{{item.sold}}</span>
+						</div>
 					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
-					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
-					</div>
-				</div>
-			</li>
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem">无自费</span>
-						<span class="list-tagitem">无购物</span>
-					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
-					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
-					</div>
-				</div>
-			</li>
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem">无自费</span>
-						<span class="list-tagitem">无购物</span>
-					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
-					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
-					</div>
-				</div>
-			</li>
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem">无自费</span>
-						<span class="list-tagitem">无购物</span>
-					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
-					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
-					</div>
-				</div>
-			</li>
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem">无自费</span>
-						<span class="list-tagitem">无购物</span>
-					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
-					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
-					</div>
-				</div>
-			</li>
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem">无自费</span>
-						<span class="list-tagitem">无购物</span>
-					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
-					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
-					</div>
-				</div>
-			</li>
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem">无自费</span>
-						<span class="list-tagitem">无购物</span>
-					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
-					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
-					</div>
-				</div>
-			</li>
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem">无自费</span>
-						<span class="list-tagitem">无购物</span>
-					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
-					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
-					</div>
-				</div>
-			</li>
-			<li class="ticket-img-con">
-				<div class="list-img-con">
-					<img src="http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg" class="ticket-img" :onerror="defaultImg" />
-					<span class="list-bookingflag">可订明日</span>
-				</div>
-				<div class="list-product">
-					<h4 class="list-productname">[北京出发]天安门＋故宫【赠送珍宝馆】＋八达岭长城＋鸟巢·水立方一日游</h4>
-					<div class="list-taglist">
-						<span class="list-tagitemlight">北京出发</span>
-						<span class="list-tagitem">无自费</span>
-						<span class="list-tagitem">无购物</span>
-					</div>
-					<div class="list-priceinfo">
-						<span class="list-qunarprice">¥<em class="list-price">208</em></span>
-						<span class="list-priceflag">起</span>
-					</div>
-					<div class="list-moreinfo">
-						<span class="list-text">已售3476</span>
-					</div>
-				</div>
-			</li>
-		</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="pageCon">
+			<div class="pagination">
+				<a href="#" class="prevPage" @click="handlePrevClick" :style = "{background:color1,border:border1,color:color3}">上一页</a>
+				<span class="currentPage">{{page}}</span>
+				<a href="#" class="nextPage" @click="handleNextClick" :style = "{background:color2,border:border2}">下一页</a>
+			</div>
+			<div class="page-text">去哪儿门票</div>
+		</div>
 	</div>
 </template>
 
 <script>
 	export default {
+		props: ["ticketInfo","ticketInfoSecond"],
 		data() {
 			return {
-				defaultImg: 'this.src="' + require('../img/index/iconswiperbackground.jpg') + '"'
+				defaultImg: 'this.src="' + require('../img/index/iconswiperbackground.jpg') + '"',
+				page:1,
+				show:false,
+				color1:"#bdbdbd",
+				color2:"#fff",
+				color3:"#fff",
+				border1: "none",
+				border2:".02rem solid #00afc7"
+			}
+		},
+		
+		methods: {
+			handlePrevClick() {
+				this.show = false;
+				this.page = 1;
+				this.color1 = "#bdbdbd";
+				this.border1 = "none";
+				this.color2 = "#fff";
+				this.border2 = ".02rem solid #00afc7";
+				this.color3 = "#fff";
+			},
+			
+			handleNextClick() {
+				this.show = true;
+				this.page = 2;
+				this.color1 = "#fff";
+				this.border1 = ".02rem solid #00afc7";
+				this.color2 = "#fff";
+				this.border2 = ".02rem solid #00afc7";
+				this.color3 = "#00afc7";
 			}
 		}
 	}
@@ -231,6 +111,10 @@
 	}
 	.ticket-img-con {
 		display: flex;
+	}
+	.ticket-list {
+		width: 100%;
+		color: #000;
 	}
 	.list-img-con {
 		position: relative;
@@ -246,9 +130,23 @@
 		top: -.04rem;
 		height: .24rem;
 		padding: .02rem;
-		background: #00bcd4;
 		color: #fff;
+		font-size: .24rem;
 		line-height: .24rem;
+	}
+	.list-bookingflagblue {
+		background: #00bcd4;
+	}
+	.list-bookingflagblue::after {
+		border-top: .14rem solid #00bcd4;
+		border-bottom: .14rem solid #00bcd4;
+	}
+	.list-bookingflagorange {
+		background: #fa8514;
+	}
+	.list-bookingflagorange::after {
+		border-top: .14rem solid #fa8514;
+		border-bottom: .14rem solid #fa8514;
 	}
 	.list-bookingflag::after {
 		content: "";
@@ -257,8 +155,6 @@
 		right: -.1rem;
 		width: 0;
 		height: 0;
-		border-top: .14rem solid #00bcd4;
-		border-bottom: .14rem solid #00bcd4;
 		border-right: .1rem solid transparent;
 	}
 	.list-product {
@@ -345,5 +241,34 @@
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
+	}
+	
+	.pageCon {
+		margin-bottom: .8rem;
+		color: #00afc7;
+		text-align: center;
+	}
+	.pagination {
+		height: .7rem;
+		line-height: .7rem;
+	}
+	.currentPage {
+	    padding: 0 15px;
+		color: #212121;
+	    line-height: .6rem;
+	}
+	.prevPage, .nextPage {
+		display: inline-block;
+		width: 1.4rem;
+		border: .02rem solid #00afc7;
+		background: #fff;
+		color: #00afc7;
+		line-height: .6rem;
+		border-radius: .06rem;
+	}
+	.page-text {
+		padding-top: .2rem;
+		line-height: .3rem;
+		font-size: .3rem;
 	}
 </style>
