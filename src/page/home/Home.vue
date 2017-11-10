@@ -16,18 +16,21 @@
 	import Activity from "./components/Activity";
 	import HotRecommend from "./components/Recommend";
 	import Category from "./components/Icon_swiper";
+	
 	export default {
-	components:{
-		"index-header":HeaderComponent,
-		"index-weekendsgo": WeekendsgoComponent,
-		"index-swiper":SwiperComponent,
-		"index-recommend":HotRecommend,
-		"index-iconswiper":Category,
-		"index-Activity":Activity
-	},
-	mounted:function(){
-		console.log("fs")
-	}
+		components:{
+			"index-header":HeaderComponent,
+			"index-weekendsgo": WeekendsgoComponent,
+			"index-swiper":SwiperComponent,
+			"index-recommend":HotRecommend,
+			"index-iconswiper":Category,
+			"index-Activity":Activity
+		},
+		mounted:function(){
+			if(this.$store.getters.shouldGetData){
+			this.$store.dispatch("getHomeData");
+			}
+		}
 }
 </script>
 

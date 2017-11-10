@@ -1,26 +1,14 @@
 <template>
-	<swiper :options="swiperOption"  ref="mySwiper">
-	    <swiper-slide>
-	    	<div class = "swiper-img-con">
-		    	<img class="swipe-img" 
-		    		src="http://img1.qunarzz.com/piao/fusion/1710/f5/57137c621d75ba02.jpg_640x200_b984ddf7.jpg" 
-		    		alt="去哪儿门票" style="opacity: 1;"/>
-	    	</div>
-	    </swiper-slide>
-	    <swiper-slide>
-	    	<div class = "swiper-img-con">
-		    	<img class="swipe-img" 
-		    		src="http://img1.qunarzz.com/piao/fusion/1609/15/630b82d932a3c402.jpg_640x200_862e836b.jpg" 
-		    		alt="去哪儿门票" style="opacity: 1;"/>
-	    	</div>
-	    </swiper-slide>
-	    <swiper-slide>
-	    	<div class = "swiper-img-con">
-		    	<img class="swipe-img" 
-		    		src="http://img1.qunarzz.com/piao/fusion/1609/f3/52a119dbed871902.jpg_640x200_b4573df8.jpg" 
-		    		alt="去哪儿门票" style="opacity: 1;"/>
-		    </div>
-	    </swiper-slide>
+	<swiper :options="swiperOption"  ref="mySwiper">		
+	    <swiper-slide v-for = "item in swiperInfo" :key = 'item.id'>
+	    	<router-link :to = "item.link">
+		    	<div class = "swiper-img-con">
+			    	<img class="swipe-img" 
+			    		:src="item.imgUrl" 
+			    		alt="去哪儿门票" style="opacity: 1;"/>
+		    	</div>
+	    	</router-link>
+	    </swiper-slide>		
 		<div class="swiper-pagination"  slot="pagination"></div>
   	</swiper>
 </template>
@@ -47,6 +35,9 @@
 	    computed: {
 	      	swiper() {
 	        	return this.$refs.mySwiper.swiper
+	      	},
+	      	swiperInfo(){
+	      		return this.$store.state.home.swiperInfo;
 	      	}
 	    }
 	}

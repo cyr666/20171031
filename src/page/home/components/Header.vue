@@ -5,11 +5,13 @@
  		<div class="header-title">
  			输入城市/景点/游玩主题
  		</div>
- 		<div class="header-right">
- 			<div class="header-city-wrapper">
- 				<span class="header-city">北京</span>
- 			</div>
- 		</div>
+ 		<router-link to = "./city">
+	 		<div class="header-right">
+	 			<div class="header-city-wrapper">
+	 				<span class="header-city">北京</span>
+	 			</div>
+	 		</div>
+ 		</router-link>
  	</header>
 </template>
 
