@@ -2,7 +2,7 @@
 	<div>
 		<citySearch/>
 		<cityList/>
-		<cityAside /><!--@ChangeHeight = "handleHeight"-->
+		<cityAside/>
 	</div>
 </template>
 
@@ -16,11 +16,6 @@
 			cityAside: CityAside,
 			cityList: CityList
 		}
-//		methods:{
-//			handleHeight(top){
-//				this.$emit("ChangeTop",top)
-//			}
-//		}
 	}
 </script>
 

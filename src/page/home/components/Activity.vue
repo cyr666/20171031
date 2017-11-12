@@ -28,7 +28,7 @@
 	
 </script>
 
-<style>
+<style scoped>
 	
 	.listitem-con{
 		border-top:0.01rem solid #eee;

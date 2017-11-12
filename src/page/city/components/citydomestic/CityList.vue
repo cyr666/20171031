@@ -18,18 +18,13 @@
 
 <script>
 	export default{
-//		data(){
-//			return{
-//				alphabet:{}
-//			}
-//		},
 		computed:{
 			hotCityInfo(){
 				return this.$store.state.city.hotCityInfo
 			},
 			ChinaCityInfo(){
 				return this.$store.state.city.ChinaCityInfo
-			}			
+			}
 		},
 		methods:{
 			
@@ -42,6 +37,7 @@
 			for(var i in letter){
 				this.$store.state.city.alphabet.push(letter[i][0].offsetTop) 
 			}
+//			console.log(this.$store.state.city.alphabet)
 		}
 	}
 </script>

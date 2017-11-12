@@ -15,7 +15,6 @@
 
 <script>
 </script>
-
 <style scoped>
 	.header-keywords{
 		width:100%;

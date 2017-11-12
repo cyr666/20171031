@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<cityHeader @change = "handleChangeType"/>
-		<cityDomestic v-if = "isshow"/><!-- @ChangeTop = "handleChangeTop"-->
+		<cityDomestic v-if = "isshow"/>
 		<cityForeign v-else/>
 	</div>
 </template>
@@ -29,14 +29,13 @@
 		methods:{
 			handleChangeType(e){
 				if(e){
-					this.isshow = true
+					this.isshow = true;
+					document.documentElement.scrollTop = 0;
 				}else{
-					this.isshow = false
-				}	
+					this.isshow = false;
+					document.documentElement.scrollTop = 0;
+				}
 			}
-//			handleChangeTop(top){				
-//				document.documentElement.scrollTop = top
-//			}
 		}
 	}
 </script>

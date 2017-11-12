@@ -3,7 +3,10 @@ export default{
 	state:{
 		hotCityInfo:[],
 		ChinaCityInfo:[],
-		alphabet:[]
+		hotCountry:[],
+		foreignInfo:[],
+		alphabet:[],
+		foreign:[]
 	},
 	actions:{
 		getHotcityData(context){
@@ -21,6 +24,8 @@ export default{
 		handleHotcityData(state,data){
 			state.hotCityInfo = data.hotCityInfo;
 			state.ChinaCityInfo = data.ChinaCityInfo;
+			state.hotCountry = data.hotCountry;
+			state.foreignInfo = data.foreignInfo;
 		}
 	},
 	getters:{

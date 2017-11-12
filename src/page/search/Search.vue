@@ -1,17 +1,14 @@
 <template>
 	<div>
 		 <search-list/> 
-		<!--<list/>-->
 	</div>
 </template>
 
 <script>
-    import SearchComponent from "./searchList";
-//	import ListComponent from "./list";
+	import SearchComponent from "./searchList";
 	export default {
 	components:{
-		 "search-list": SearchComponent
-//		"list": ListComponent
+		"search-list": SearchComponent		
 	}
 }
 </script>

@@ -22,6 +22,7 @@
 		padding:0 .2rem .1rem .2rem;
 		background:#00bcd4;
 		margin-top:.88rem
+
 	}
 	.city-keywords{
 		width:90%;

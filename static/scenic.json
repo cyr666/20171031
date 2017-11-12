@@ -1,0 +1,299 @@
+{
+	"ret": true,
+	"data": {
+		"ticket": [
+		{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_110x110_fac6a6cd.jpg",
+			"title" : "故宫(5A)",
+			"hot" : "热",
+			"price" : "20",
+			"comment" : "155165评论",
+			"region" : "北京·东城区",
+			"adultTicket" : "【当日票】故宫成人票",
+			"price1" : "40",
+			"stuTicket" : "【当日票】故宫学生票",
+			"price2" : "20",
+
+			"imgUrl2": "http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_110x110_52cd713d.jpg",
+			"title2" : "北京野生动物园(4A)",
+			"price02" : "78.1",
+			"comment2" : "7252评论",
+			"region2" : "北京·大兴区",
+			"adultTicket2" : "北京野生动物园成人票",
+			"price12" : "116.1",
+			"stuTicket2" : "北京野生动物园学生票/老人票",
+			"price22" : "79"
+		},
+		{
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_110x110_d9d85877.jpg",
+			"title" : "颐和园(5A)",
+			"hot" : "热",
+			"price" : "24.5",
+			"comment" : "21315评论",
+			"region" : "北京·海淀区",
+			"adultTicket" : "颐和园+园中园成人票",
+			"price1" : "50",
+			"stuTicket" : "颐和园+园中园学生/老人票",
+			"price2" : "25",
+
+			"imgUrl2": "http://img1.qunarzz.com/sight/p0/1604/1e/1e75f8e1af9fe81f90.img.jpg_110x110_caf63693.jpg",
+			"title2" : "世界花卉大观园(4A)",
+			"price02" : "33.1",
+			"comment2" : "2995评论",
+			"region2" : "北京·丰台区",
+			"adultTicket2" : "世界花卉大观园成人票",
+			"price12" : "47",
+			"stuTicket2" : "世界花卉大观园儿童票",
+			"price22" : "33.1"
+		},
+		{
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_110x110_684eb80e.jpg",
+			"title" : "八达岭长城(5A)",
+			"hot" : "热",
+			"price" : "25",
+			"comment" : "23903评论",
+			"region" : "北京·延庆县",
+			"adultTicket" : "八达岭长城门票+空中索道往返成人票",
+			"price1" : "175",
+			"stuTicket" : "八达岭长城门票+空中索道往返学生/老人票",
+			"price2" : "157.5",
+
+			"imgUrl2": "http://img1.qunarzz.com/sight/p0/201405/12/51b63883c25f5d87af3c08bb016e2bd7.jpg_110x110_d957be56.jpg",
+			"title2" : "恭王府(5A)",
+			"price02" : "19.9",
+			"comment2" : "24484评论",
+			"region2" : "北京·西城区",
+			"adultTicket2" : "恭王府成人票",
+			"price12" : "39.9",
+			"stuTicket2" : "恭王府半价票（学生/老人）",
+			"price22" : "20"
+		},
+		{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
+			"title" : "北京欢乐谷(4A)",
+			"hot" : "热",
+			"price" : "13",
+			"comment" : "48395评论",
+			"region" : "北京·朝阳区",
+			"adultTicket" : "【活动票】北京欢乐谷金面王朝演出成人票",
+			"price1" : "13",
+			"stuTicket" : "【活动票】北京欢乐谷日场成人票",
+			"price2" : "111",
+
+			"imgUrl2": "http://img1.qunarzz.com/sight/p0/1707/2a/2a0adbeebf6d18bba3.water.jpg_110x110_444ce846.jpg",
+			"title2" : "北京杜莎夫人蜡像馆",
+			"price02" : "84.2",
+			"comment2" : "5225评论",
+			"region2" : "北京·前门大街",
+			"adultTicket2" : "北京杜莎夫人蜡像馆成人票",
+			"price12" : "150",
+			"stuTicket2" : "北京杜莎夫人蜡像馆学生票",
+			"price22" : "98"
+		},
+		{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b6378fd3b2e1d86a3.img.jpg_110x110_07ed4c23.jpg",
+			"title" : "慕田峪长城(5A)",
+			"hot" : "热",
+			"price" : "19.1",
+			"comment" : "18583评论",
+			"region" : "北京·怀柔区",
+			"adultTicket" : "慕田峪长城成人票",
+			"price1" : "38",
+			"stuTicket" : "慕田峪长城老人票",
+			"price2" : "20",
+
+			"imgUrl2": "http://img1.qunarzz.com/sight/p0/1510/d9/d91e68582076767e.water.jpg_110x110_dce39438.jpg",
+			"title2" : "古北水镇",
+			"price02" : "110",
+			"comment2" : "4159评论",
+			"region2" : "北京·密云县",
+			"adultTicket2" : "古北水镇门票+司马台长城门票（日场）",
+			"price12" : "170",
+			"stuTicket2" : "古北水镇成人票（日场）",
+			"price22" : "150"
+		},
+		{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_110x110_2c172ba2.jpg",
+			"title" : "天安门广场",
+			"hot" : "热",
+			"price" : "20",
+			"comment" : "16639评论",
+			"region" : "北京·东城区",
+			"adultTicket" : "故宫+珍宝馆+钟表馆（成人票)",
+			"price1" : "60",
+			"stuTicket" : "【上午场】故宫成人票",
+			"price2" : "40",
+
+			"imgUrl2": "http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_110x110_ceacdb5c.jpg",
+			"title2" : "香山公园(4A)",
+			"price02" : "8.5",
+			"comment2" : "529评论",
+			"region2" : "北京·海淀区",
+			"adultTicket2" : "香山公园景区手机电子导游",
+			"price12" : "8.5",
+			"stuTicket2" : "【秋季限定】北京香山赏红叶＋碧云寺秋色＋颐和园皇家园林一日游",
+			"price22" : "108"
+		},
+		{
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/201306/13/bdf22f69fab0ee4ec8d65eac.jpg_110x110_3403a6d8.jpg",
+			"title" : "八达岭长城缆车",
+			"hot" : "热",
+			"price" : "157.5",
+			"comment" : "21670评论",
+			"region" : "北京·八达岭长城",
+			"adultTicket" : "八达岭长城门票+空中索道往返成人票",
+			"price1" : "175",
+			"stuTicket" : "八达岭长城门票+空中索道往返学生/老人票",
+			"price2" : "157.5",
+
+			"imgUrl2": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_110x110_2de732a1.jpg",
+			"title2" : "水立方",
+			"price02" : "14",
+			"comment2" : "2044评论",
+			"region2" : "北京·奥林匹克公园",
+			"adultTicket2" : "水立方成人票",
+			"price12" : "30",
+			"stuTicket2" : "水立方儿童票",
+			"price22" : "14"
+		},
+		{
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1410/ee/5140b8da5ef82cad730c0810fa81371f.water.jpg_110x110_d312e77c.jpg",
+			"title" : "坡峰岭",
+			"hot" : "热",
+			"price" : "44.9",
+			"comment" : "4020评论",
+			"region" : "北京·房山区",
+			"adultTicket" : "【活动票】坡峰岭景区红叶节门票",
+			"price1" : "45",
+			"stuTicket" : "坡峰岭门票",
+			"price2" : "45",
+
+			"imgUrl2": "http://img1.qunarzz.com/sight/p0/1709/c2/c24ce1e72260ebefa3.img.jpg_110x110_19faceb2.jpg",
+			"title2" : "北京园博园",
+			"price02" : "9",
+			"comment2" : "1478评论",
+			"region2" : "北京·丰台区",
+			"adultTicket2" : "北京园博园成人票",
+			"price12" : "18",
+			"stuTicket2" : "北京园博园儿童/老人票",
+			"price22" : "9"
+		}
+	],
+	"bigitem": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/3e/72d2396d47131702.png",
+			"bigname": "运动健身",
+			"smallname": ["全部运动健身","游泳","健身","滑雪","体育馆","瑜伽","保龄球","舞蹈"]
+	
+		},{
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/73/0c8e23368dceac02.png",
+			"bigname": "文化古迹",
+			"smallname": []
+		},{
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/a5/9254bfcb77931f02.png",
+			"bigname": "农家度假",
+			"smallname": []
+		},{
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/e6/f8a210e488ba7602.png",
+			"bigname": "演出",
+			"smallname": []
+		},{
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/3e/d07407699d56c202.png",
+			"bigname": "游乐场",
+			"smallname": []
+		},{
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/f8/799d67d22404c602.png",
+			"bigname": "自然风光",
+			"smallname": []
+		},{
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/70/a7a71fb69cc7d902.png",
+			"bigname": "公园",
+			"smallname": []
+		},{
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/de/8b3631887808e202.png",
+			"bigname": "展馆",
+			"smallname": []
+		},{
+			"id": 9,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/86/95cb8117ad91a402.png",
+			"bigname": "温泉",
+			"smallname": []
+		},{
+			"id": 10,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1509/1e/bee608077e1927.png",
+			"bigname": "户外拓展",
+			"smallname": []
+		},{
+			"id": 11,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/d5/2a3ec877befef902.png",
+			"bigname": "室内娱乐",
+			"smallname": []
+		},{
+			"id": 12,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/d5/59dbd6c5a28aac02.png",
+			"bigname": "城市观光",
+			"smallname": []
+		},{
+			"id": 13,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/15/8883a00c917e5202.png",
+			"bigname": "体验馆",
+			"smallname": []
+		},{
+			"id": 14,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/ce/e06a995a69d60702.png",
+			"bigname": "餐饮",
+			"smallname": []
+		},{
+			"id": 15,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/88/081697df39c9f802.png",
+			"bigname": "水上玩乐",
+			"smallname": []
+		},{
+			"id": 16,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/26/1eea67d9388e4b02.png",
+			"bigname": "手工",
+			"smallname": []
+		},{
+			"id": 17,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/16/165a69fea0cc0502.png",
+			"bigname": "植物园",
+			"smallname": []
+		},{
+			"id": 18,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/38/bb338d8258a1ed02.png",
+			"bigname": "出行必备",
+			"smallname": []
+		},{
+			"id": 19,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/2c/d4a2b394eecbeb02.png",
+			"bigname": "游船",
+			"smallname": []
+		},{
+			"id": 20,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/15/d94c0a3f16a48a02.png",
+			"bigname": "交通",
+			"smallname": []
+		},{
+			"id": 21,
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1608/72/494d8f9690e0ea02.png",
+			"bigname": "海洋馆",
+			"smallname": []
+		}
+		]
+	}
+}

@@ -66,6 +66,7 @@ export default {
 <style scoped>
 	.tour-listbox{
 		position: relative;
+		z-index:8
 	}
 	.scroller-bottom{
 		top: 0rem;

@@ -3,37 +3,13 @@
 		<swiper-slide>
 			<div id="category-container">
 				<ul class="category-img-container">
-					<li class="category-img-con">
-						<img src="../img/index/category-img1.png" class="category-img" />
-						<p class="keywords">景点门票</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img2.png" class="category-img" />
-						<p class="keywords">动植物园</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img3.png" class="category-img" />
-						<p class="keywords">故宫</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img4.png" class="category-img" />
-						<p class="keywords">一日游</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img5.png" class="category-img" />
-						<p class="keywords">必游榜单</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img6.png" class="category-img" />
-						<p class="keywords">秋色美</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img7.png" class="category-img" />
-						<p class="keywords">游乐场</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img8.png" class="category-img" />
-						<p class="keywords">泡温泉</p>
+					<li class="category-img-con" v-for="item in iconswiperInfo" :key="item.id">
+						<router-link :to="item.link">
+							<div>
+								<img :src="item.imgUrl" class="category-img" :onerror="defaultImg" />
+								<p class="keywords">{{item.keywords}}</p>
+							</div>
+						</router-link>
 					</li>
 				</ul>
 			</div>
@@ -41,37 +17,13 @@
 		<swiper-slide>
 			<div id="category-container">
 				<ul class="category-img-container">
-					<li class="category-img-con">
-						<img src="../img/index/category-img9.png" class="category-img" />
-						<p class="keywords">城市观光</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img10.png" class="category-img" />
-						<p class="keywords">玻璃栈道</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img11.png" class="category-img" />
-						<p class="keywords">名胜古迹</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img12.png" class="category-img" />
-						<p class="keywords">周边游</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img13.png" class="category-img" />
-						<p class="keywords">自然风光</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img14.png" class="category-img" />
-						<p class="keywords">古水北镇</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img15.png" class="category-img" />
-						<p class="keywords">景点讲解</p>
-					</li>
-					<li class="category-img-con">
-						<img src="../img/index/category-img16.png" class="category-img" />
-						<p class="keywords">全部</p>
+					<li class="category-img-con" v-for="item in iconswiperInfoSecond" :key="item.id">
+						<router-link :to="item.link">
+							<div>
+								<img :src="item.imgUrl" class="category-img" :onerror="defaultImg" />
+								<p class="keywords">{{item.keywords}}</p>
+							</div>
+						</router-link>
 					</li>
 				</ul>
 			</div>
@@ -83,22 +35,32 @@
 <script>
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
-		export default {
-			data() {
-				return {
-					swiperOption: {
-						direction: 'horizontal',
-						autoHeight: true,
-						pagination: '.swiper-pagination',
-						observeParents: true
-					}
-				} 
+	export default {
+//		props: ["iconswiperInfo", "iconswiperInfoSecond"],
+		data() {
+			return {
+				swiperOption: {
+					direction: 'horizontal',
+					autoHeight: true,
+					pagination: '.swiper-pagination',
+					observeParents: true
+				},
+				defaultImg: 'this.src="' + require('../../img/index/iconswiperbackground.jpg') + '"'
+			}
+		},
+		computed:{
+			iconswiperInfo(){
+				return this.$store.state.home.iconswiperInfo;
 			},
-
-			components: {
-				swiper,
-				swiperSlide
+			iconswiperInfoSecond(){
+				return this.$store.state.home.iconswiperInfoSecond;
+			},
+		},
+		components: {
+			swiper,
+			swiperSlide
 		}
+
 	}
 </script>
 
@@ -122,6 +84,8 @@
 	}
 	.keywords {
 		padding: .2rem 0;
-
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 </style>

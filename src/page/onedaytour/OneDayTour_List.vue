@@ -72,6 +72,8 @@
 <style scoped>
 	.list-concent{
 		position:absolute;
+		/*top:.88rem;
+		z-index:8;*/
 		overflow: hidden;
 		width:100%;
 		height:.8rem;

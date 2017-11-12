@@ -2,7 +2,9 @@ import axios from "axios"
 export default{
 	state:{
 		swiperInfo:[],
-		recommend:[]
+		recommend:[],
+		iconswiperInfo:[],
+		iconswiperInfoSecond:[]
 	},
 	actions:{
 		getHomeData(context) {
@@ -19,6 +21,8 @@ export default{
 		changeIndexInfo(state,data){
 			state.swiperInfo = data.swiperInfo;
 			state.recommend = data.recommend;
+			state.iconswiperInfo = data.iconswiperInfo;
+			state.iconswiperInfoSecond = data.iconswiperInfoSecond;
 		}
 	},
 	getters:{

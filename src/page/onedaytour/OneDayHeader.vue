@@ -1,7 +1,9 @@
 
 <template>
 	<header class="header">
- 		<div class="header-left iconfont icon-fanhui"></div>
+		<router-link to = '/'>
+ 			<div class="header-left iconfont icon-fanhui"></div>
+		</router-link>
  		<div class="header-title">
  			一日游
  		</div>
@@ -21,8 +23,12 @@
 
 <style>
 	.header {
+		position:fixed;
+		top:0;
+		z-index:9;
 		overflow: hidden;
 		height: .88rem;
+		width:100%;
 		background: #00bcd4;
 	}
 	.header-left {

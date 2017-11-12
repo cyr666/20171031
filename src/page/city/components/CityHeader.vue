@@ -1,10 +1,12 @@
 <template>
 	<div>
 		<div class = "city-header">
-			<div class = "city-Return iconfont icon-fanhui"></div>
+			<router-link to = '/'>
+				<div class = "city-Return iconfont icon-fanhui"></div>
+			</router-link>
 			<div class = "city-type">
-				<span class = "domestic" @click = "handleTypeChange" Domestic = "true">国内</span>
-				<span class = "foreign" @click = "handleTypeChange">海外</span>				
+				<span class = "domestic" :class = {currentCity:isshow} @click = "handleTypeChange" Domestic = "true">国内</span>
+				<span class = "foreign" :class = {currentCity:!isshow} @click = "handleTypeChange">海外</span>				
 			</div>
 		</div>
 	</div>
@@ -35,6 +37,7 @@
 		position:fixed;
 		top:0;
 		z-index:999
+
 	}
 	.city-Return{
 		float: left;
@@ -60,5 +63,8 @@
 		border:1px solid #fff;
 		color:#fff;
 	}
-	
+	.currentCity {
+		background: #fff;
+		color: #00afc7;
+	}
 </style>
